@@ -1,0 +1,71 @@
+<?page title="Teste ZK"?>
+<?link rel="stylesheet" type="text/css" href="/css/index.css"?>
+<zk>
+	<borderlayout>
+		<north sclass="banner">
+			<div>
+				<hbox>
+					<a href="index.zul">
+						<image src="imgs/music.jpg" height="90px" />
+					</a>
+
+					<div>
+						<label class="pageName" value="STUDIO" />
+					</div>
+				</hbox>
+			</div>
+		</north>
+
+		<west class="menu" minsize="240" splittable="true"
+			collapsible="true">
+			<grid>
+				<columns>
+					<column class="column" label="" />
+					<column class="column" label="" />
+				</columns>
+				<rows>
+					<row class="row">
+						<image class="img" src="imgs/disco.png" />
+						<a href="rehearsal.zul" class="linkMenu">
+							Ensaios
+						</a>
+					</row>
+					<row class="row">
+						<image class="img" src="imgs/disco.png" />
+						<a href="recording.zul" class="linkMenu">
+							Gravações
+						</a>
+					</row>
+					<row class="row">
+						<image class="img" src="imgs/disco.png" />
+						<a href="report.zul" class="linkMenu">
+							Relatórios
+						</a>
+					</row>
+					<row class="row">
+						<image class="img" src="imgs/disco.png" />
+						<a href="index.zul" class="linkMenu">
+							Home
+						</a>
+					</row>
+
+				</rows>
+			</grid>
+		</west>
+
+		<center self="@insert(conteudo)">
+
+		</center>
+
+		<south>
+			<div align="center">
+				<vbox class="rodape">
+					Studio ${desktop.webApp.version }
+				</vbox>
+			</div>
+		</south>
+
+
+	</borderlayout>
+
+</zk>

@@ -1,0 +1,42 @@
+<?init class="org.zkoss.zk.ui.util.Composition" arg0="/template/template.zul"?>
+<?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c"?>
+<?link rel="stylesheet" type="text/css" href="css/index.css"?>
+
+<zk>
+	<div self="@define(conteudo)">
+		<window>
+			<caption src="imgs/guitar.jpg"
+				label="Agendamento de ensaios" />
+			<vbox>
+				<grid>
+					<columns>
+						<column label="" />
+						<column label="" />
+					</columns>
+					<rows>
+						<row>
+							<cell>Nome Da Banda</cell><cell ><textbox placeholder="The Rolling Stones" /></cell>
+						</row>
+						<row>
+							<cell>Data do Agendamento</cell><cell><datebox format="dd/MM/yyyy" disabled="true" value="${c:new('java.util.Date')}" /></cell>
+						</row>
+						<row>
+							<cell >Horário de início do ensaio</cell><cell><timebox constraint="between 160000 and 200000 : Escolha entre 16:00 e 20:00" /></cell>
+						</row>
+						<row>
+							<cell >Data do ensaio</cell><cell><datebox /></cell>
+						</row>
+						<row>
+							<cell>Observações</cell><cell><textbox placeholder="detalhe ou particularidade"/></cell>
+						</row>
+						<row>
+							<cell>Quantidade de horas</cell><cell><spinner width="100px" constraint="no empty, min 2 max 8" /></cell>
+						</row>
+						
+					</rows>
+				</grid>
+
+			</vbox>
+		</window>
+	</div>
+</zk>

@@ -1,7 +1,8 @@
 <?init class="org.zkoss.zk.ui.util.Composition" arg0="/template/template.zul"?>
 <?link rel="stylesheet" type="text/css" href="css/index.css"?>
+
 <zk>
 	<div self="@define(conteudo)">
-		<label value="pagina inicial" />
+		<label value="Relatórios" />
 	</div>
 </zk>
