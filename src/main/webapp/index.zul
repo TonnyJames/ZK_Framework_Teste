@@ -1,0 +1,58 @@
+<?page title="Teste ZK"?>
+<?link rel="stylesheet" type="text/css" href="css/index.css"?>
+<zk>
+	<borderlayout>
+		<north sclass="banner">
+			<div>
+				<hbox>
+					<a>
+						<image src="imgs/music.jpg" height="90px" />
+					</a>
+
+					<div>
+						<label class="pageName" value="STUDIO" />
+					</div>
+				</hbox>
+			</div>
+		</north>
+
+		<west class="menu" minsize="240" splittable="true" collapsible="true">
+			<grid>
+				<columns>
+					<column class= "column" label="" />
+					<column class= "column" label="" />
+				</columns>
+				<rows>
+					<row class="row">
+						<image class="img" src="imgs/disco.png"/>
+						<a class="linkMenu">Ensaios</a>
+					</row>
+					<row class="row">
+						<image class="img" src="imgs/disco.png"/>
+						<a class="linkMenu">Gravações</a>
+					</row>
+					<row class="row">
+						<image class="img" src="imgs/disco.png"/>
+						<a class="linkMenu">Relatórios</a>
+					</row>
+				</rows>
+			</grid>
+		</west>
+
+		<center>
+			<label class="titulo" value="Região center" />
+
+		</center>
+
+		<south >
+			<div align="center">
+				<vbox class="rodape">
+					Studio ${desktop.webApp.version }
+				</vbox>
+			</div>
+		</south>
+
+
+	</borderlayout>
+
+</zk>

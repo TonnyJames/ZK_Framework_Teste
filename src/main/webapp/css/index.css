@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+.pageName {
+	font-size: 50px;
+	color: orange;
+}
+
+.titulo {
+	color: green;
+}
+
+.banner {
+	align-items: center;
+	background-color: aqua;
+}
+
+.menu {
+	width: 240px;
+}
+
+.column {
+	width: 36px;
+}
+
+.row {
+	display: inline-flex;
+	display: table-row; 
+}
+
+.img {
+	width: 30px;
+	height: auto;
+	align-content: flex-start;
+	padding-right: 0;
+	
+}
+
+.linkMenu {
+	text-decoration: none;
+	align-content: flex-start;
+	font-size: 16px;
+}
+
+.rodape {
+	text-decoration: none;
+	text-align: center;	
+	color: grey;
+	opacity: 70%;
+}
